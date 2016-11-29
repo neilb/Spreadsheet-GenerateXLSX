@@ -189,12 +189,67 @@ You can also pass the name of the sheet:
  generate_xslx('pokemon.xlsx', 'All Pokemon' => \@sheet1, 'Hit List' => \@sheet2);
 
 
+=head1 SEE ALSO
+
+The following modules can all generate the XLSX format:
+
+=over 4
+
+L<Excel::Writer::XLSX> - the underlying module used to generate the spreadsheet.
+Gives you full control over the spreadsheet generated, but as a result has a much
+more complex interface.
+
+L<Spreadsheet::WriteExcel::Styler> - helps with formatting of cells when
+using C<Excel::Writer::XLSX> or C<Spreadsheet::WriteExcel>.
+
+L<Spreadsheet::Template> - used to generate spreadsheets from
+"JSON files which describe the desired content and formatting".
+By default it generates XLSX format.
+
+L<Data::Table::Excel> - converts between L<Data::Table> objects and XLS or XLSX format spreadsheets.
+
+L<XLS::Simple> - provides a simple interface for both reading and writing spreadsheets.
+Minimal documentation, and what there is is written in Japanese.
+The relevant function is called `write_xls()`, but it has a dependency on C<Excel::Writer::XLSX>.
+Untested.
+
+=back
+
+The following modules only generate Microsoft's earlier xls binary format.
+
+=over 4
+
+L<Spreadsheet::WriteExcel> - provides the same interface as C<Excel::Writer::XLSX>,
+but generates the XLS format.
+
+L<Spreadsheet::WriteExcel::FromDB> - converts a database table to an XLS format spreadsheet.
+
+L<Spreadsheet::WriteExcel::FromDB::Query> - converts a query to an XLS spreadsheet,
+as opposed to a table.
+
+L<Spreadsheet::WriteExcel::Simple> - provides a simpler OO interface
+for generating single-sheet XLS spreadsheets.
+
+L<Spreadsheet::Write> - another simplified OO interface, which can write CSV or XLS output,
+but not XLSX.
+
+L<Spreadsheet::Wright> - a fork of C<Spreadsheet::Write> which supports more output formats
+(CSV, XLS, HTML, XHTML, XML, ODS, and JSON), but doesn't (appear to) support XLSX.
+
+L<Spreadsheet::DataToExcel> - provides a simple OO interface for generating XLS spreadsheets,
+and provides some control over the generated format.
+But, as with most of the modules listed here, only XLS output is supported.
+
+L<Spreadsheet::WriteExcel::Simple::Tabs> - a very simple OO interface built on C<Spreadsheet::WriteExcel>.
+This one is close to the spirit of C<Spreadsheet::GenerateXLSX>, but only generates XLS.
+
+=back
+
 =head1 TODO
 
  * smarter auto-formatting of columns
  * more tests
  * better error handler
- * SEE ALSO
 
 
 =head1 REPOSITORY
