@@ -110,7 +110,7 @@ sub generate_xlsx
     my $filename     = shift;
     my $sheet_number = 1;
     my $book         = Excel::Writer::XLSX->new( $filename )
-                       // croak "failed to create workbook\n";
+                       || croak "failed to create workbook\n";
     my $formats      = $define_formats->($book);
     my $sheet_name;
 

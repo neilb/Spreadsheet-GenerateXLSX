@@ -2,6 +2,7 @@ Revision history for Perl module Spreadsheet::GenerateXLSX
 
 0.02 2016-11-29 NEILB
     - Added SEE ALSO section, with a list of other spreadsheet writing modules.
+    - Changed one instance of // to ||, so it will work on older Perls.
 
 0.01 2016-11-27 NEILB
     - First release to CPAN
