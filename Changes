@@ -1,5 +1,10 @@
 Revision history for Perl module Spreadsheet::GenerateXLSX
 
+0.03 2016-12-11 NEILB
+    - The github repo was wrong in the doc. Sebastien Thebert++
+    - Updated SEE ALSO entry on XLS::Simple, now I've played with it,
+      and added a link to my recent blog post.
+
 0.02 2016-11-29 NEILB
     - Added SEE ALSO section, with a list of other spreadsheet writing modules.
     - Changed one instance of // to ||, so it will work on older Perls.

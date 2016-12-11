@@ -191,7 +191,9 @@ You can also pass the name of the sheet:
 
 =head1 SEE ALSO
 
-The following modules can all generate the XLSX format:
+The following modules can all generate the XLSX format.
+I also wrote a L<blog post|http://neilb.org/2016/12/10/spreadsheet-generate-xlsx.html>
+which gives more details on some of these.
 
 =over 4
 
@@ -210,8 +212,8 @@ L<Data::Table::Excel> - converts between L<Data::Table> objects and XLS or XLSX 
 
 L<XLS::Simple> - provides a simple interface for both reading and writing spreadsheets.
 Minimal documentation, and what there is is written in Japanese.
-The relevant function is called `write_xls()`, but it has a dependency on C<Excel::Writer::XLSX>.
-Untested.
+The function for creating a spreadsheet is called `write_xls()`,
+but it generates the XLSX format.
 
 =back
 
@@ -254,7 +256,7 @@ This one is close to the spirit of C<Spreadsheet::GenerateXLSX>, but only genera
 
 =head1 REPOSITORY
 
-L<https://github.com/neilbowers/Spreadsheet-GenerateXLSX>
+L<https://github.com/neilb/Spreadsheet-GenerateXLSX>
 
 
 =head1 AUTHOR
