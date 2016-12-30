@@ -79,7 +79,7 @@ sub generate_data
     for (my $r = 0; $r < $nrows; $r++) {
         my $row = [];
         for (my $c = 0; $c < $ncols; $c++) {
-            push($row, "cell${r}${c}");
+            push(@$row, "cell${r}${c}");
         }
         push(@$data, $row);
     }
