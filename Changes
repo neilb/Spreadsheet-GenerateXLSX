@@ -1,5 +1,10 @@
 Revision history for Perl module Spreadsheet::GenerateXLSX
 
+0.04 2017-01-05 NEILB
+    - Optional testsuite that checks whether generated spreadsheet reads ok.
+      Uses Spreadsheet::ParseXLSX, or skips if that's not installed.
+    - Changed req'd version of Perl to 5.008, to match Ref::Util
+
 0.03_02 2016-12-30 NEILB
     - I had done a push on an arrayref, which caused some CPAN Testers fails --
       I need to get out of that habit.
